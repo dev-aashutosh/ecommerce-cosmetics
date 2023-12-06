@@ -1,0 +1,61 @@
+@media (max-width:576px) {
+    .line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .mask-1 {
+        background-color: #000000ac;
+    }
+
+    .swiper {
+        text-align: center;
+    }
+
+    .main-banner p {
+        min-width: 100%;
+    }
+
+    .bbtm {
+        border-bottom: 2px solid rgb(90, 86, 86);
+    }
+
+
+}
+
+@media (min-width:576px) {
+    .line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .bbtm {
+        border-bottom: 2px solid rgb(90, 86, 86);
+    }
+
+
+}
+
+@media (min-width:768px) {
+    .line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+
+}
+
+@media (min-width:992px) {
+    .bbtm {
+        border-bottom: none;
+    }
+}
+
+@media (min-width:1200px) {}

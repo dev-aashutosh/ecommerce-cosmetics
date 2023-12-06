@@ -1,0 +1,201 @@
+/* for index.html */
+.stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(172, 172, 172);
+}
+
+.marquee {
+    animation: banner 8s linear infinite alternate;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes banner {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-900px);
+    }
+
+}
+
+.asize {
+    background-repeat: no-repeat;
+    background-position: 105% 100%;
+    background-size: 160px;
+}
+
+.a1 {
+    background-image: url("/assets/images/model/r1.webp");
+}
+
+.a2 {
+    background-image: url("/assets/images/model/r2.webp");
+}
+
+.a3 {
+    background-image: url("/assets/images/model/r3.webp");
+}
+
+.a4 {
+    background-image: url("/assets/images/model/r4.webp");
+}
+
+.a5 {
+    background-image: url("/assets/images/model/r5.webp");
+    background-size: 140px;
+}
+
+.a6 {
+    background-image: url("/assets/images/model/r6.webp");
+}
+
+.product-image span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.product-image ul {
+    top: 5px;
+    right: -30px;
+    transition: all .5s ease 0s;
+}
+
+.product-card:hover ul {
+    right: 5px;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+    transition: 0.2s linear;
+}
+
+.product-image li a {
+    transition: all 0.3s;
+}
+
+
+.product-image .add-to-cart {
+    position: absolute;
+    left: 100%;
+    bottom: 0%;
+    transition: all 0.3s ease 0s;
+}
+
+.product-card:hover .add-to-cart {
+    left: 0;
+}
+
+.testimonials img {
+    filter: grayscale(100%);
+}
+
+.bgmain {
+    background-image: url("/assets/images/mainbanner/sm.avif");
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: contain;
+}
+
+footer {
+    background-image: url("/assets/images/mainbanner/FOOTER.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* for login css  */
+:root {
+    --red: #DC3545;
+    --black: rgba(0, 0, 0, 0.874);
+}
+
+.login {
+    background-image: url("/assets/images/mainbanner/cln.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.form {
+    background-color: rgba(17, 25, 40, 0.3);
+    backdrop-filter: blur(10px) saturate(100%);
+    border-radius: 12px;
+}
+
+.title::before {
+    width: 20px;
+    height: 20px;
+}
+
+.title::after {
+    width: 20px;
+    height: 20px;
+    animation: diffuse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    top: 35%;
+    background-color: var(--red);
+}
+
+@keyframes diffuse {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.form label .input {
+    padding: 10px 5px 5px 5px;
+}
+
+.form label .input+span {
+    position: absolute;
+    left: 5px;
+    top: -10px;
+    cursor: text;
+    padding: 5px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 10px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    color: var(--red) !important;
+    top: -14px;
+    left: 10px;
+    background-color: var(--black);
+    font-size: 0.8em;
+    font-weight: bold;
+}
