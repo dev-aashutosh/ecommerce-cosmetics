@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
+    <!-- scroll effect -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- media css -->
     <link rel="stylesheet" href="assets/css/media.css">
 
@@ -1866,7 +1868,7 @@
     <!-- coupon banner  -->
     <section class="bg-black bg-opacity-50 py-5">
         <div class="container p-0">
-            <div class="bgmain bg-black py-2 px-3 ">
+            <div class="bgmain bg-black py-2 px-3 " data-aos="flip-right">
                 <div class="bg-black bg-opacity-50 py-2">
                     <p class="display-5 fw-medium text-md-end text-center mb-1">Hurry Up The Sale Has Just Begun </p>
                     <p class="text-md-end text-center">Coupon Code:
@@ -1966,6 +1968,8 @@
     <script src="assets/js/main.js"></script>
     <!-- bootstrap js  -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- swiper js  -->
     <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
@@ -2020,6 +2024,7 @@
                 },
             },
         });
+        AOS.init();
     </script>
 </body>
 
